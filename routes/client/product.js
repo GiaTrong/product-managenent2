@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.send("Trang san pham");
-});
+// products
+const productController = require('../../controllers/client/products.controller')
+router.get("/", productController.index);
 
 router.get("/about", (req, res) => {
   res.send("Trang about");

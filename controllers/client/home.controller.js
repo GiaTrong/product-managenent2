@@ -1,4 +1,6 @@
 // [GET]
 module.exports.index = (req, res) => {
-    res.send("Trang home");
+    res.render("client/pages/home/index.pug", {
+        pageTitle: "Trang chu"
+    })
 }

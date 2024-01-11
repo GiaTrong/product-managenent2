@@ -1,4 +1,6 @@
 // [GET]
 module.exports.index = (req, res) => {
-    res.send("Trang san pham");
+    res.render("client/pages/products/index.pug", {
+        products: {}
+    });
 }
